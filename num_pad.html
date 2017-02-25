@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Patrick Segura Num Pad</title>
+
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/num_pad.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Roboto|Amiko" rel="stylesheet">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <!-- Bootstrap JS CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script type="text/javascript" src="js/num_pad.js"></script>
+</head>
+
+<body>
+    <div id="filter"></div>
+    <button id="click-pad" data-toggle="modal" data-target="#myModal">NumPad</button>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Number Pad</h4>
+                </div>
+                <div class="modal-body">
+                    <p id="instructions">Click on numbers to print text. When complete click SEND for an alert.</p>
+                    <div id="num-holder"></div>
+                    <div id="display-numbers"></div>
+                </div>
+                <div class="modal-footer">
+                    <button id="send" type="button" class="btn btn-default">SEND</button>
+                    <button type="button" id="close" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
